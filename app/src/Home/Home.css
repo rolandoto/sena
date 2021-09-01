@@ -1,0 +1,52 @@
+.custom_background_apps {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.apps_items_list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.list_item_apps {
+    width: 33.3%;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid #efeeee;
+    transition: .6s all;
+}
+
+.list_item_apps_link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 10px 40px;
+    text-align: center;
+}
+
+.list_item_apps:hover {
+    background-color: #f7f6f6;
+}
+
+.title {
+    font-size: 1.5em;
+    color: var(--sena-green-color)
+}
+
+.subtitle {
+    font-size: .8em;
+    color: rgb(129, 129, 129);
+}
+
+@media screen and (max-width: 800px) {
+    .custom_background_sidebar {
+        padding-left: 57px !important;
+    }
+}

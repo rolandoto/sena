@@ -1,0 +1,35 @@
+.search_criter_input {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 0.6em;
+    color: teal;
+}
+
+.form_group_info {
+    margin: 10px 0;
+}
+
+.no_over_hidden {
+    overflow: visible !important;
+}
+
+.height_auto {
+    height: auto !important;
+}
+
+.min_height_search {
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.min_height_search > .subtitle {
+    text-align: center;
+}
+
+.form_full_width {
+    width: 90%;
+}

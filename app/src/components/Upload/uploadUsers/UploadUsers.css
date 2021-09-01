@@ -1,0 +1,193 @@
+.file_input_container {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 999;
+}
+
+.btn_add_new_student {
+    width: 25px;
+    height: 25px;
+    box-shadow: 0 0 5px 0 #00000026;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.show_alert_error {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 6px 0;
+    background-color: #f9c0b6;
+    color: tomato;
+}
+
+.custom_title_add_program {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container_upload_section {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.direction_column {
+    flex-direction: column;
+}
+
+.manualStudentCreation {
+    width: 100%;
+}
+
+.actionButtons {
+    display: flex;
+}
+
+.actionButtons div {
+    width: 100px;
+    color: var(--sena-green-color);
+    cursor: pointer;
+}
+
+.form_total_size {
+    width: 100%;
+    height: 100%;
+}
+
+.btn_file_upload {
+    z-index: 9999;
+}
+
+.file_upload_icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.file_upload_icon::before {
+    content: "";
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    background-color: rgb(35, 130, 118);
+    border-radius: 50%;
+    animation-delay: 0.6s;
+    animation: overlay_to_effect 2s infinite ease;
+    z-index: -1;
+}
+
+.file_upload_icon::after {
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    background-color: rgb(35, 130, 118);
+    border-radius: 50%;
+    animation-delay: 0.4s;
+    animation: overlay_to_effect 2s infinite ease;
+    z-index: -1;
+}
+
+.overlay_white {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid rgb(35, 130, 118);
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay_white svg {
+    color: rgb(35, 130, 118);
+    font-size: 2em;
+}
+
+.select_text {
+    color: rgb(35, 130, 118);
+    font-size: 1.2em;
+}
+
+.loading_file {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99999;
+    border-radius: 10px;
+    background-color: rgb(35, 130, 118);
+    animation: loading_start 1s ease;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.change_loader_color {
+    background-color: var(--sena-orange-color) !important;
+}
+
+.text_loading {
+    width: 60%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.loader_upload {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #fff #fff #fff transparent;
+    animation: loader_upload 0.6s infinite linear;
+}
+
+@keyframes loader_upload {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading_start {
+    from {
+        right: -500px;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@keyframes overlay_to_effect {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+    }
+}

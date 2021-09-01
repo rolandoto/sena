@@ -1,0 +1,120 @@
+@media screen and (max-width: 915px) {
+    .list_item_apps {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 815px) {
+    .list_item_apps {
+        width: 100%;
+    }
+
+    .min_width_editor {
+        width: 600px !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .min_width_editor {
+        width: 500px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .btn_orange {
+        width: 100%;
+    }
+
+    .container_white_edit {
+        width: 290px;
+        min-width: 290px;
+    }
+
+    .col_6 {
+        width: 100%;
+    }
+
+    .rows {
+        flex-direction: column;
+    }
+
+    .rows > .col_6:nth-child(1) {
+        margin-bottom: 15px;
+    }
+
+    .image_profile {
+        margin: 0 auto;
+    }
+
+    .search_container {
+        padding: 10px;
+    }
+
+    .show_overflow_on_mobile {
+        overflow: visible;
+    }
+
+    .min_height_mobile {
+        height: 400px !important;
+    }
+
+    .role_container {
+        flex-direction: column;
+    }
+
+    .roleList {
+        width: 100%;
+        margin-top: 120px;
+    }
+
+    .add_new_role {
+        width: 80%;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    }
+
+    .form_desing_rol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container_info_uploads {
+        flex-direction: column;
+    }
+
+    .min_height_big {
+        height: 600px;
+    }
+
+    .upload_new_file_change {
+        height: 120px;
+    }
+
+    .action_buttons > .btn_orange {
+        width: 48%;
+    }
+
+    .action_buttons > .btn_teal {
+        width: 48%;
+        text-align: center;
+    }
+
+    .floating_button {
+        right: 5px;
+    }
+
+    .citation_item {
+        padding: 5px 6px;
+    }
+
+    .container_white_edit {
+        width: 290px;
+        min-width: 290px;
+    }
+
+    .min_width_editor {
+        width: 350px !important;
+    }
+}

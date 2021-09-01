@@ -1,0 +1,156 @@
+.role_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.roleList {
+    width: 60%;
+    text-align: center;
+}
+
+.role_actions {
+    width: 30%;
+}
+
+.add_new_role {
+    height: 100px;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--sena-green-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wd100 {
+    width: 100%;
+}
+
+.subTitleLow {
+    color: var(--sena-green-color);
+}
+
+.modal_overlay_role {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #fff;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.min_height {
+    min-height: 300px;
+}
+
+.close_modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--sena-green-color);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.form_desing_rol {
+    width: 100%;
+}
+
+.custom_role_container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 12px 0;
+}
+
+.capacitySelect {
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    font-size: 0.9em;
+    box-shadow: 0 0 5px 0 rgba(59, 59, 59, 0.199);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: rgb(71, 71, 71);
+    transition: 0.5s all;
+}
+
+.capacitySelect:hover {
+    color: #fff;
+    background-color: var(--sena-green-color);
+}
+
+.selectedCapacity {
+    color: #fff;
+    background-color: var(--sena-green-color);
+}
+
+.roles_list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    list-style: none;
+    max-height: 300px;
+    height: 300px;
+    overflow: auto;
+    padding: 0 10px;
+}
+
+.roles_list_item {
+    width: 100%;
+    margin: 10px 0;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.144);
+    height: 30px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.role_actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit_trigger {
+    cursor: pointer;
+    color: var(--sena-green-color);
+}
+
+.delete_trigger {
+    cursor: pointer;
+    color: tomato;
+}
+
+.text_success {
+    color: var(--sena-green-color);
+}
+
+.text_failure {
+    color: tomato;
+}
+
+.role_name {
+    color: rgb(92, 92, 92);
+}
+
+
+.show_overflow {
+    overflow: visible !important;
+}

@@ -1,0 +1,102 @@
+.custom_template {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.custom_fields_list {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.custom_fields_item {
+    padding: 5px;
+    background-color: rgb(235, 235, 235);
+    margin: 5px 0;
+}
+
+.space_between {
+    justify-content: space-between !important;
+}
+
+.w900 {
+    width: 900px !important;
+}
+
+.templates_list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.templates_item {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(187, 187, 187);
+    color: #333;
+    border-radius: 5px;
+    align-items: center;
+    transition: .5s all;
+    margin-bottom: 10px;
+}
+
+.templates_item:hover {
+    background-color: var(--sena-green-color);
+    color: #fff;
+}
+
+.template_action_item {
+    display: flex;
+}
+
+.template_action_item svg{
+    cursor: pointer;
+    color: var(--sena-green-color);
+}
+
+.templates_item:hover svg{
+    color: #fff;
+}
+
+.MuiPopover-root {
+    z-index: 99999 !important;
+}
+
+.push_template {
+    position: fixed;
+    right: 0;
+    top: 40px;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: #fff;
+    animation: push_template .5s linear;
+    z-index: 999999999;
+}
+
+.push_template_success {
+    background-color: var(--sena-green-color);
+}
+
+.push_template_error {
+    background-color: tomato;
+}
+
+.custom_container_details_template {
+    overflow: auto;
+    max-height: 700px;
+}
+
+.CodeMirror {
+    height: 600px !important;
+}
+
+@keyframes push_template {
+    from {
+        right: -100px;
+    }
+    to {
+        right: 0;
+    }
+}

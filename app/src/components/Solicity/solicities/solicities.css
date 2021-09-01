@@ -1,0 +1,133 @@
+.solicityList {
+    margin-top: 10px;
+    list-style: none;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.solicityListItem {
+    width: 100%;
+    border: 1px solid #cccccc;
+    min-height: 55px;
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 3px;
+    margin: 6px 0;
+}
+
+.select_style_solicity {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #c4c4c4;
+    border-radius: 2px;
+    color: #838282;
+    cursor: pointer;
+    outline: none;
+}
+
+.button_generate_citation {
+    margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--sena-green-color);
+    border: 1px solid var(--sena-green-color);
+    padding: 6px 10px;
+    cursor: pointer;
+    transition: .5s all ;
+    background-color: transparent;
+    outline: none;
+}
+
+.button_generate_citation:hover {
+    background-color: var(--sena-green-color);
+    color: #fff;
+}
+
+.selected_print_color {
+    background-color: var(--sena-green-color);
+    color: #fff;
+}
+
+.overlay_black {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+.list_solicity_details {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.appretices_item_solicity_details {
+    padding: 10px;
+    width: 48%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.356);
+    margin-bottom: 20px;
+    min-height: 220px;
+}
+
+.file_item_solicity_details {
+    padding: 10px;
+    width: 30%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.356);
+}
+
+.customTextStyle {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 20px;
+}
+
+.subTitleBold {
+    font-weight: 600;
+    color: rgb(78, 78, 78);
+    font-size: .9em;
+}
+
+.custom_container_details {
+    max-height: 600px !important;
+    overflow: auto !important;
+}
+
+.grid_pickers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_group_material {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.MuiDialog-root {
+    z-index: 999999 !important;
+}
+
+.left-align {
+    align-items: flex-start !important;
+}
+
+.position_relative {
+    position: relative !important;
+}
+
+.btn_white {
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--sena-green-color);
+}

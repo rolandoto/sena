@@ -1,0 +1,92 @@
+.navbar_component {
+    position: fixed;
+    background-color: #fff;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.082);
+}
+
+.desktop_view {
+    min-width: 250px;
+    width: 320px;
+    height: 100vh;
+}
+
+.mobile_view {
+    min-width: 50px;
+    width: 60px;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.profile_view {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    color: rgb(95, 95, 95);
+    margin-left: 13px;
+}
+
+.profile_picture {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.list_of_apps {
+    padding: 0 10px;
+}
+
+.list_of_apps ul {
+    list-style: none;
+}
+
+.list_item {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.list_item a {
+    text-decoration: none;
+    color: rgb(95, 95, 95);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.list_item:hover {
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.075);
+}
+
+.logout_button {
+    background-color: tomato;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+    .profile_view {
+        padding: 0 !important;
+    }
+
+    .logout_button {
+        width: 100%;
+    }
+}

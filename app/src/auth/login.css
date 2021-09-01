@@ -1,0 +1,271 @@
+.login_component {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container_login {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_desing_part {
+    position: relative;
+    width: 30%;
+}
+
+.custom_desing_circles {
+    position: relative;
+    width: 30%;
+}
+
+.custom_desing_circles_left {
+    position: absolute;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle1_desing {
+    position: absolute;
+    background-color: var(--sena-orange-color);
+    width: 650px;
+    height: 650px;
+    border-radius: 45%;
+    animation: rotate_right_circle 5s infinite linear;
+}
+
+.circle2_desing {
+    opacity: 0.8;
+    position: absolute;
+    background-color: var(--sena-orange-color);
+    width: 900px;
+    height: 900px;
+    border-radius: 40%;
+    animation: rotate_left_circle 6s infinite linear;
+}
+
+.circle3_desing {
+    position: absolute;
+    background-color: var(--sena-orange-color);
+    width: 1100px;
+    height: 1100px;
+    border-radius: 40%;
+    opacity: 0.6;
+    animation: rotate_right_circle 7s infinite linear;
+}
+
+.loading_circle {
+    animation: loading_circle 6s ease;
+}
+
+.message_circle_white {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    text-align: center;
+}
+
+.message_circle_white p {
+    text-align: center;
+    font-size: 1.5em;
+    opacity: 1;
+    animation: text_fade_show 1s ease;
+    color: #fff;
+    z-index: 99;
+}
+
+.loader_login {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #fff #fff transparent #fff;
+    animation: rotate_right_circle 3s ease;
+}
+
+@keyframes text_fade_show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes loading_circle {
+    to {
+        transform: scale(50);
+    }
+}
+
+@keyframes rotate_right_circle {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate_left_circle {
+    to {
+        transform: rotate(-360deg);
+        opacity: 0.7;
+    }
+}
+
+.form_group {
+    margin: 15px 0;
+    width: 100%;
+    position: relative;
+}
+
+.form_control {
+    width: 100%;
+    height: 40px;
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px 0 rgba(59, 59, 59, 0.199);
+    border-radius: 20px;
+}
+
+.form_control_select {
+    width: 100%;
+    height: 40px;
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px 0 rgba(59, 59, 59, 0.199);
+    border-radius: 20px;
+    color: rgb(95, 95, 95);
+}
+.form_group .MuiFormControl-root {
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 5px 0 rgba(59, 59, 59, 0.199);
+    border-radius: 0;
+    color: rgb(95, 95, 95);
+    display: flex;
+    justify-content: center;
+}
+
+.form_group .MuiFormControl-root .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: none;
+}
+
+.form_group .MuiFormControl-root .MuiInput-underline::after {
+    border-bottom: none;
+}
+
+.form_group .MuiFormControl-root {
+    outline: none !important;
+}
+
+.form_group .MuiFormControl-root .MuiInput-underline::before {
+    border-bottom: none;
+}
+
+.form_group .MuiFormControl-root .MuiSelect-select:focus {
+    background-color: transparent;
+}
+
+.form_group .MuiFormControl-root .MuiSelect-select {
+    color: rgb(95, 95, 95);
+}
+
+.login_text_header {
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    color: rgb(109, 109, 109);
+}
+
+.forgot_password_link {
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+}
+
+.links_section_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*
+    Alerts
+*/
+.alert_error_login {
+    margin-top: 10px;
+    margin-left: 10px;
+    color: tomato;
+}
+
+/*
+    Responsive components for login
+*/
+
+@media screen and (max-width: 1200px) {
+    .custom_desing_circles_left {
+        right: -350px;
+    }
+
+    .form_desing_part {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .custom_desing_circles {
+        width: 1px;
+    }
+
+    .custom_desing_circles_left {
+        right: -800px;
+    }
+
+    .circle2_desing {
+        display: none;
+    }
+
+    .circle3_desing {
+        display: none;
+    }
+
+    .form_desing_part {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .links_section_form {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .forgot_password_link {
+        margin-bottom: 10px;
+    }
+
+    .form_group {
+        margin: 15px 0;
+        width: 100%;
+    }
+    .form_control {
+        box-shadow: 0 0 5px 0 rgba(59, 59, 59, 0.288);
+    }
+}
